@@ -24,7 +24,7 @@ const JobPostPage: React.FC<JobPostPageProps> = ({ addJob, fetchJobs }) => {
       }
 
       try {
-        const response = await fetch("http://localhost:3001/jobs", {
+        const response = await fetch("https://job-offer-app-2-cb37e3f87d5c.herokuapp.com/jobs", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

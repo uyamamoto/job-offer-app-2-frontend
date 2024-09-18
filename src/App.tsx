@@ -17,7 +17,7 @@ const App: React.FC = () => {
   // APIから求人データを取得する非同期関数
   const fetchJobs = async (): Promise<void> => {
     try {
-      const response = await fetch("http://localhost:3001/jobs");
+      const response = await fetch("https://job-offer-app-2-cb37e3f87d5c.herokuapp.com/jobs");
       if (!response.ok) {
         throw new Error("データの取得に失敗しました");
       }
