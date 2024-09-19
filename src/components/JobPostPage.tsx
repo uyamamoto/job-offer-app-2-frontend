@@ -6,6 +6,7 @@ interface JobPostPageProps {
   fetchJobs: () => void;
 };
 
+// 求人投稿フォーム表示のためのコンポーネント
 const JobPostPage: React.FC<JobPostPageProps> = ({ addJob, fetchJobs }) => {
   const [category, setCategory] = useState<string>("");
   const [salary, setSalary] = useState<string>("");
